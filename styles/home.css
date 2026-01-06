@@ -1,0 +1,102 @@
+/***** HERO ****/
+.hero {
+  background: linear-gradient(180deg, #000000 0%, #4a4a4a 100%);
+  height: calc(100vh - 62px - 100px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 52px;
+}
+.hero-logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero-logo {
+  width: 350px;
+}
+.hero-image {
+  height: 100%;
+  object-fit: cover;
+}
+.hero-width-border {
+  width: 100%;
+  position: absolute;
+  bottom: -52px;
+}
+.hero-label-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.hero-label {
+  box-shadow: 0px 2px 2px 0px #00000040;
+  border-radius: 7px;
+}
+
+/**** EROTIC MASSAGE ****/
+.erotic-massage {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/**** TYPES OF MASSAGES ****/
+.types {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: "Oswald";
+}
+
+/**** WHAT IS EROTIC MASSAGE ****/
+.whatis {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: "Istok Web";
+}
+.whatis__types-wrapper {
+  margin-bottom: 30px;
+}
+.whatis__image-wrapper {
+  width: 100%;
+  height: 235px;
+  border-radius: 7px;
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.whatis-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.whatis__subtitle {
+  font-size: 46px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Oswald";
+  position: absolute;
+}
+.whatis__types-title {
+  top: 5%;
+  right: 5%;
+}
+.whatis__benefits-title {
+  right: 5%;
+}
+.whatis__list {
+  list-style-type: none;
+}
+.whatis__list-item {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.whatis__list-item .text-bold {
+  color: #53001e;
+  margin-left: 5px;
+}

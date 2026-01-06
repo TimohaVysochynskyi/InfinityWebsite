@@ -1,0 +1,53 @@
+.where {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.where__places-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+.where__places-card {
+  width: calc(50% - 15px);
+  height: 330px;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald";
+  position: relative;
+}
+.where__places-card-image {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.where__places-card-title {
+  font-size: 68px;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.where__places-card-address {
+  font-size: 24px;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  font-style: normal;
+  margin-top: -10px;
+}
+.where__map-image {
+  width: 100%;
+  border-radius: 7px;
+  border: 5px solid var(--accent-color);
+  margin-top: 30px;
+}

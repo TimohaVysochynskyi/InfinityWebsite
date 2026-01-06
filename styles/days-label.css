@@ -1,0 +1,54 @@
+.days-label {
+  height: 104px;
+  width: 760px;
+  font-family: "Lato";
+}
+.days-label__row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 52px;
+  width: 100%;
+}
+.days-label__day {
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.days-label__day:first-child {
+  border-radius: 7px 0 0 0;
+}
+.days-label__day:last-child {
+  border-radius: 0 7px 0 0;
+}
+.days-label__day:nth-child(1),
+.days-label__day:nth-child(2) {
+  color: #fff;
+}
+.days-label__phone {
+  grid-column: 1/3;
+  background-color: #cacaca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 0 0 7px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.days-label__phone img {
+  width: 22px;
+}
+.days-label__happy {
+  grid-column: 3/8;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 0 0 7px 0;
+  font-size: 18px;
+
+  font-family: "Lato", sans-serif;
+}

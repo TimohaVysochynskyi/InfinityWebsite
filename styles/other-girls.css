@@ -1,0 +1,39 @@
+.other-girls-title {
+  font-size: 44px;
+  color: #53001e;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  border-bottom: 3px solid #b12054cc;
+}
+.other-girls-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.other-girls__figure {
+  width: 180px;
+}
+.other-girls-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  list-style-type: none;
+}
+.other-girls-list__item {
+  font-weight: 700;
+  color: var(--accent-color);
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+}
+.other-girls__image {
+  width: 110px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}

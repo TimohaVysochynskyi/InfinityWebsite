@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Modal</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reservation-modal.css">
+    <link rel="stylesheet" href="./styles/contact-form.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jomhuria&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Passions+Conflict&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- RESERVATION MODAL -->
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-header">
+                <button class="modal-close-button">
+                    <svg viewBox="0 0 36 36" fill="none" class="modal-close__icon">
+                        <path
+                            d="M5.37468 0H30.458C31.8835 0 33.2507 0.566293 34.2587 1.5743C35.2667 2.58231 35.833 3.94946 35.833 5.375V30.4583C35.833 31.8839 35.2667 33.251 34.2587 34.259C33.2507 35.267 31.8835 35.8333 30.458 35.8333H5.37468C3.94914 35.8333 2.58199 35.267 1.57397 34.259C0.565968 33.251 -0.000324249 31.8839 -0.000324249 30.4583V5.375C-0.000324249 3.94946 0.565968 2.58231 1.57397 1.5743C2.58199 0.566293 3.94914 0 5.37468 0ZM10.3197 22.9871C10.1321 23.1477 9.97979 23.3454 9.87225 23.5676C9.76471 23.7899 9.70428 24.032 9.69474 24.2788C9.68521 24.5255 9.72679 24.7716 9.81687 25.0015C9.90694 25.2314 10.0436 25.4402 10.2182 25.6148C10.3928 25.7894 10.6016 25.9261 10.8315 26.0161C11.0614 26.1062 11.3075 26.1478 11.5542 26.1383C11.801 26.1287 12.0431 26.0683 12.2654 25.9608C12.4877 25.8532 12.6853 25.7009 12.8459 25.5133L17.9163 20.4429L22.9868 25.5133C23.1474 25.7009 23.345 25.8532 23.5673 25.9608C23.7896 26.0683 24.0317 26.1287 24.2785 26.1383C24.5252 26.1478 24.7713 26.1062 25.0012 26.0161C25.2311 25.9261 25.4399 25.7894 25.6145 25.6148C25.7891 25.4402 25.9257 25.2314 26.0158 25.0015C26.1059 24.7716 26.1475 24.5255 26.1379 24.2788C26.1284 24.032 26.068 23.7899 25.9604 23.5676C25.8529 23.3454 25.7006 23.1477 25.513 22.9871L20.4426 17.9167L25.513 12.8462C25.8065 12.5035 25.9599 12.0626 25.9425 11.6117C25.9251 11.1608 25.7381 10.733 25.4191 10.4139C25.1 10.0949 24.6722 9.90793 24.2213 9.89052C23.7704 9.8731 23.3295 10.0265 22.9868 10.32L17.9163 15.3904L12.8459 10.32C12.6853 10.1324 12.4877 9.98012 12.2654 9.87257C12.0431 9.76503 11.801 9.7046 11.5542 9.69507C11.3075 9.68554 11.0614 9.72712 10.8315 9.81719C10.6016 9.90727 10.3928 10.0439 10.2182 10.2185C10.0436 10.3931 9.90694 10.6019 9.81687 10.8318C9.72679 11.0618 9.68521 11.3078 9.69474 11.5546C9.70428 11.8013 9.76471 12.0434 9.87225 12.2657C9.97979 12.488 10.1321 12.6856 10.3197 12.8462L15.3901 17.9167L10.3197 22.9871Z"
+                            fill="#B12054" />
+                    </svg>
+                </button>
+                <span class="modal-title">Monika</span>
+            </div>
+            <!-- PHOTO GRID -->
+            <div class="modal-girl">
+                <img src="./assets/images/girl-image.jpg" alt="Girl image"
+                    class="modal-girl__image modal-girl__image--large">
+                <div class="modal-girl__right">
+                    <img src="./assets/images/girl-image.jpg" alt="Girl image" class="modal-girl__image">
+                    <img src="./assets/images/girl-image.jpg" alt="Girl image" class="modal-girl__image">
+                    <img src="./assets/images/girl-image.jpg" alt="Girl image" class="modal-girl__image">
+                    <img src="./assets/images/girl-image.jpg" alt="Girl image" class="modal-girl__image">
+                </div>
+            </div>
+            <!-- SELECTING OPTIONS AND A SERVICE -->
+            <div class="modal-checkpoints">
+                <div class="modal-checkpoints__left">
+                    <div class="modal-checkpoints__day">
+                        Dnes
+                        <a href="#" class="modal-checkpoints__day-link">změnit</a>
+                    </div>
+                    <div class="modal-checkpoints__duration-list">
+                        <input id="_60min" type="radio" class="modal-checkpoints__duration-option">
+                        <label for="_60min" class="modal-checkpoints__duration-item">60 min</label>
+                        <input id="_90min" type="radio" class="modal-checkpoints__duration-option">
+                        <label for="_90min" class="modal-checkpoints__duration-item">90 min</label>
+                        <input id="_120min" type="radio" class="modal-checkpoints__duration-option">
+                        <label for="_120min" class="modal-checkpoints__duration-item">120 min</label>
+                    </div>
+                    <div class="modal-checkpoints__extra">
+                        <span class="modal-checkpoints-title">EXTRA</span>
+                        <ul class="modal-checkpoints__extra-list">
+                            <li class="modal-checkpoints__extra-item">
+                                <input type="checkbox" id="extra-prostate" class="modal-checkpoints__extra-input">
+                                <label for="extra-prostate" class="modal-checkpoints__extra-label">Masáž
+                                    prostaty</label>
+                            </li>
+                            <li class="modal-checkpoints__extra-item">
+                                <input type="checkbox" id="extra-footjob" class="modal-checkpoints__extra-input">
+                                <label for="extra-footjob" class="modal-checkpoints__extra-label">FootJob</label>
+                            </li>
+                            <li class="modal-checkpoints__extra-item">
+                                <input type="checkbox" id="extra-dance" class="modal-checkpoints__extra-input">
+                                <label for="extra-dance" class="modal-checkpoints__extra-label">Privátní tanec</label>
+                            </li>
+                            <li class="modal-checkpoints__extra-item">
+                                <input type="checkbox" id="extra-autoerotic" class="modal-checkpoints__extra-input">
+                                <label for="extra-autoerotic" class="modal-checkpoints__extra-label">Autoerotika</label>
+                            </li>
+                            <li class="modal-checkpoints__extra-item">
+                                <input type="checkbox" id="extra-kissing" class="modal-checkpoints__extra-input">
+                                <label for="extra-kissing" class="modal-checkpoints__extra-label">Francouzské
+                                    líbání</label>
+                            </li>
+                            <li class="modal-checkpoints__extra-item">
+                                <input type="checkbox" id="extra-piss" class="modal-checkpoints__extra-input">
+                                <label for="extra-piss" class="modal-checkpoints__extra-label">Piss</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-checkpoints__right">
+                    <span class="modal-checkpoints-title">ZVOLTE SLUŽBU</span>
+                    <ul class="modal-checkpoints__service-list">
+                        <li class="modal-checkpoints__service-item">
+                            <input type="radio" id="service-infinity-mix" name="service"
+                                class="modal-checkpoints__service-input" checked>
+                            <label for="service-infinity-mix" class="modal-checkpoints__service-label">Infinity
+                                Mix</label>
+                        </li>
+                        <li class="modal-checkpoints__service-item">
+                            <input type="radio" id="service-lingam" name="service"
+                                class="modal-checkpoints__service-input">
+                            <label for="service-lingam" class="modal-checkpoints__service-label">Lingam masáž</label>
+                        </li>
+                        <li class="modal-checkpoints__service-item">
+                            <input type="radio" id="service-lesbian" name="service"
+                                class="modal-checkpoints__service-input">
+                            <label for="service-lesbian" class="modal-checkpoints__service-label">Masáž lesbická
+                                show</label>
+                        </li>
+                        <li class="modal-checkpoints__service-item">
+                            <input type="radio" id="service-body-to-body" name="service"
+                                class="modal-checkpoints__service-input">
+                            <label for="service-body-to-body" class="modal-checkpoints__service-label">Masáž tělo na
+                                tělo</label>
+                        </li>
+                        <li class="modal-checkpoints__service-item">
+                            <input type="radio" id="service-pussycat" name="service"
+                                class="modal-checkpoints__service-input">
+                            <label for="service-pussycat" class="modal-checkpoints__service-label">Pussycat
+                                masáž</label>
+                        </li>
+                        <li class="modal-checkpoints__service-item">
+                            <input type="radio" id="service-couples" name="service"
+                                class="modal-checkpoints__service-input">
+                            <label for="service-couples" class="modal-checkpoints__service-label">Masáž pro páry</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-price">
+                <span class="modal-price__title text-bold">CENA CELKEM: <span class="text-accent">6500 Kč</span></span>
+                <span class="modal-price__rate text-bold">/ 250 €</span>
+            </div>
+            <a class="modal-phone-wrapper" href="tel:+420603373881">
+                <img src="./assets/icons/whatsapp-icon.svg" alt="Whatsapp icon" class="modal-phone__icon">
+                <span class="text-accent">+420 <span class=" text-bold">603 373 881</span></span>
+            </a>
+
+            <!-- CONTACT FORM -->
+            <div class="modal-form-wrapper">
+                <form action="" class="modal-form">
+                    <div class="modal-form__row">
+                        <input type="text" placeholder="Jméno*" required class="modal-form__input">
+                        <input type="email" placeholder="Email*" required class="modal-form__input">
+                        <input type="text" placeholder="Telefon*" required class="modal-form__input">
+                    </div>
+                    <div class="modal-form__textarea-wrapper">
+                        <textarea name="message" class="modal-form__textarea" placeholder="Poznámka"></textarea>
+                        <div class="modal-form__footer">
+                            <button type="submit" class="modal-form__button">Odeslat</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Це непотрібний елемент. Лише для того, аби щось було на фоні -->
+    <img src="./assets/images/page-placeholder.jpg" alt=""
+        style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; object-fit: cover; z-index: 1;">
+</body>
+
+</html>

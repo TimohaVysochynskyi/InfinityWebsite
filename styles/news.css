@@ -1,0 +1,34 @@
+.news {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: "Istok Web", sans-serif;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 330px;
+  gap: 30px;
+  margin-top: 40px;
+}
+.news-grid__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-grid__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.news-grid__text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.news-grid__link {
+  font-size: 20px;
+  color: #53001e;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #53001e;
+}

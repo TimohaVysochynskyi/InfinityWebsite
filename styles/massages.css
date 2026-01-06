@@ -1,0 +1,152 @@
+.whatis {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.extra {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.extra .card-grid {
+  grid-template-rows: 450px;
+}
+.extra .card-grid__image {
+  height: 240px;
+}
+
+/**** MASSAGE TYPE PAGE DESCRIPTION ****/
+.description {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.description-top {
+  display: flex;
+  height: 360px;
+  gap: 24px;
+  font-family: "Oswald", sans-serif;
+}
+.description-top__image {
+  width: calc(50% - 12px);
+  height: 100%;
+  border-radius: 7px;
+  object-fit: cover;
+}
+.description-top__reservation-list {
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  border: 3px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+.description-top__reservation__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  height: 100%;
+  border: 1px dashed var(--accent-color);
+  border-radius: 7px;
+}
+.description-top__reservation__duration {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #000;
+  padding: 5px 30px;
+  border-radius: 15px;
+}
+.description-top__reservation-girl-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-top__reservation-girl-text {
+  color: #414040;
+  font-weight: 700;
+  font-family: "Istok Web", sans-serif;
+}
+.description-top__reservation-girl-price {
+  color: #53001e;
+  font-size: 22px;
+}
+.description-top__reservation__button {
+  border: none;
+  background: none;
+  color: var(--accent-color);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+.description-content {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+.description-col {
+  width: calc(50% - 12px);
+}
+.description-col:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.description-title {
+  font-size: 44px;
+  line-height: 100%;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.description__list {
+  margin: 0;
+  margin-left: 25px;
+}
+.description-col .card-grid {
+  margin-top: 30px;
+  grid-template-rows: 480px;
+}
+.description-col .card-grid__image {
+  height: 250px;
+}
+.description-col .card-grid__label {
+  font-size: 18px;
+}
+.description-col .card-grid__item-title {
+  font-size: 32px;
+}
+.description-col .card-grid__item-text {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/**** AVAILABLE GIRLS ****/
+.girls {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.girls-label {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+/**** FEEDBACKS ****/
+.feedbacks {
+  padding: 40px 0;
+}
+.feedbacks .section-row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.feedbacks-placeholder {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  margin-top: 40px;
+}
