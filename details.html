@@ -22,25 +22,40 @@
     <!-- HEADER -->
     <header class="header bg-accent">
         <div class="header-content">
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li><a href="#" class="header__nav-link">ÚVOD</a></li>
-                    <li><a href="#" class="header__nav-link">DÍVKY</a></li>
-                    <li><a href="#" class="header__nav-link">SLUŽBY</a></li>
-                    <li><a href="#" class="header__nav-link">REZERVACE</a></li>
-                    <li><a href="#" class="header__nav-link">CENÍK</a></li>
-                    <li><a href="#" class="header__nav-link">INTERIÉR</a></li>
-                    <li><a href="#" class="header__nav-link">BLOG</a></li>
-                    <li><a href="#" class="header__nav-link">KONTAKT</a></li>
-                </ul>
-            </nav>
-            <div class="header__lang-wrapper">
-                <button type="button" class="header__lang-button">
-                    <img src="./assets/icons/eng-lang-icon.png" alt="English" class="header__lang-image">
-                </button>
-                <button type="button" class="header__lang-button">
-                    <img src="./assets/icons/cz-lang-icon.png" alt="Czech" class="header__lang-image">
-                </button>
+            <a href="./index.html" class="header__logo" aria-label="Home">
+                <img src="./assets/images/logo-light.png" alt="Infinity SPA Logo" class="header__logo-image">
+            </a>
+
+            <input type="checkbox" id="header-nav-toggle" class="header__nav-toggle" aria-hidden="true">
+            <label for="header-nav-toggle" class="header__burger" aria-label="Open menu">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </label>
+
+            <label for="header-nav-toggle" class="header__overlay" aria-hidden="true"></label>
+
+            <div class="header__drawer" aria-label="Menu">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li><a href="#" class="header__nav-link">ÚVOD</a></li>
+                        <li><a href="#" class="header__nav-link">DÍVKY</a></li>
+                        <li><a href="#" class="header__nav-link">SLUŽBY</a></li>
+                        <li><a href="#" class="header__nav-link">REZERVACE</a></li>
+                        <li><a href="#" class="header__nav-link">CENÍK</a></li>
+                        <li><a href="#" class="header__nav-link">INTERIÉR</a></li>
+                        <li><a href="#" class="header__nav-link">BLOG</a></li>
+                        <li><a href="#" class="header__nav-link">KONTAKT</a></li>
+                    </ul>
+                </nav>
+                <div class="header__lang-wrapper">
+                    <button type="button" class="header__lang-button">
+                        <img src="./assets/icons/eng-lang-icon.png" alt="English" class="header__lang-image">
+                    </button>
+                    <button type="button" class="header__lang-button">
+                        <img src="./assets/icons/cz-lang-icon.png" alt="Czech" class="header__lang-image">
+                    </button>
+                </div>
             </div>
         </div>
     </header>

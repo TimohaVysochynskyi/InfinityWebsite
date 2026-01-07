@@ -64,3 +64,53 @@
   border-radius: 10px;
   background-color: #2cb742;
 }
+
+@media (max-width: 1200px) {
+  .girls-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .girls-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .girls-grid__image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .girls-grid__name {
+    font-size: 34px;
+  }
+
+  .girls-grid__image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 425px) {
+  .girls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .girls-grid__image {
+    height: 340px;
+  }
+
+  .girls-grid__card-row {
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    padding-bottom: 6px;
+  }
+}
+
+@media (max-width: 375px) {
+  .girls-grid__image {
+    height: 320px;
+  }
+}

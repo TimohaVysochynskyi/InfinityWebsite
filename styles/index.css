@@ -68,3 +68,76 @@ body {
   width: 100%;
   border-bottom: 3px solid #b12054cc;
 }
+
+@media (max-width: 1440px) {
+  .section-title {
+    font-size: 58px;
+  }
+
+  .section-cursive {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 52px;
+    max-width: 720px;
+  }
+
+  .section-cursive {
+    font-size: 56px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 46px;
+  }
+
+  .section-cursive {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .section-cursive {
+    font-size: 44px;
+    display: none;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-title {
+    font-size: 34px;
+  }
+
+  .section-cursive {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 32px;
+  }
+}

@@ -51,3 +51,54 @@
   border: 5px solid var(--accent-color);
   margin-top: 30px;
 }
+
+@media (max-width: 1200px) {
+  .where {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .where__places-card {
+    height: 280px;
+  }
+
+  .where__places-card-title {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .where__places-card {
+    width: 100%;
+  }
+
+  .where__places-wrapper {
+    margin-top: 30px;
+  }
+
+  .where__places-card-title {
+    font-size: 52px;
+  }
+
+  .where__places-card-address {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .where__places-card {
+    height: 240px;
+  }
+
+  .where__places-card-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .where__places-card-title {
+    font-size: 40px;
+  }
+}

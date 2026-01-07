@@ -52,3 +52,67 @@
 
   font-family: "Lato", sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .days-label {
+    width: 100%;
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .days-label {
+    height: auto;
+  }
+
+  .days-label__row:first-child {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 52px;
+  }
+
+  .days-label__day {
+    flex: 0 0 auto;
+    min-width: 74px;
+    padding: 0 10px;
+    font-size: 18px;
+    height: 52px;
+  }
+
+  .days-label__row:last-child {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .days-label__phone {
+    grid-column: 1/2;
+    border-radius: 0;
+    padding: 10px 12px;
+  }
+
+  .days-label__happy {
+    grid-column: 1/2;
+    border-radius: 0 0 7px 7px;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .days-label__day {
+    min-width: 70px;
+    font-size: 16px;
+  }
+
+  .days-label__phone {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .days-label__day {
+    min-width: 66px;
+  }
+}
