@@ -92,6 +92,10 @@ body {
   .paragraph {
     font-size: 20px;
   }
+
+  .side-col-title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -101,6 +105,10 @@ body {
 
   .section-cursive {
     font-size: 50px;
+  }
+
+  .side-col-title {
+    font-size: 38px;
   }
 }
 
@@ -124,6 +132,10 @@ body {
   .paragraph {
     font-size: 18px;
   }
+
+  .side-col-title {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -134,10 +146,18 @@ body {
   .section-cursive {
     font-size: 40px;
   }
+
+  .side-col-title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 375px) {
   .section-title {
     font-size: 32px;
+  }
+
+  .side-col-title {
+    font-size: 28px;
   }
 }

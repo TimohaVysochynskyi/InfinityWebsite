@@ -372,8 +372,11 @@
   }
 
   .subheader-line {
-    width: 100%;
-    height: 3px;
+    display: none;
+  }
+
+  .subheader-logo {
+    display: none;
   }
 }
 

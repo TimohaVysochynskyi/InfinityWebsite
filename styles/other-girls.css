@@ -30,3 +30,51 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (max-width: 1024px) {
+  .other-girls-content {
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .other-girls-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .other-girls__figure {
+    display: none;
+  }
+
+  .other-girls-list {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .other-girls-list__item {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .other-girls__figure {
+    width: 140px;
+  }
+
+  .other-girls-list__item {
+    font-size: 34px;
+  }
+
+  .other-girls__image {
+    width: 90px;
+  }
+}
+
+@media (max-width: 375px) {
+  .other-girls-list__item {
+    font-size: 32px;
+  }
+}
