@@ -62,3 +62,86 @@
 .card-grid__item:nth-child(4n + 3) .card-grid__item-text {
   color: #ffffffbf;
 }
+
+@media (max-width: 1200px) {
+  .card-grid {
+    gap: 14px;
+    grid-template-rows: 620px;
+  }
+
+  .card-grid__image {
+    height: 410px;
+  }
+
+  .card-grid__item-title {
+    font-size: 32px;
+  }
+
+  .card-grid__item-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+  }
+
+  .card-grid__image {
+    height: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid__image {
+    height: 360px;
+  }
+
+  .card-grid__label {
+    font-size: 18px;
+    padding: 4px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid__image {
+    height: 320px;
+  }
+
+  .card-grid__item-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-grid__item {
+    padding: 14px;
+  }
+
+  .card-grid__image {
+    height: 280px;
+  }
+
+  .card-grid__item-title {
+    font-size: 28px;
+  }
+
+  .card-grid__item-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-grid__image {
+    height: 260px;
+  }
+
+  .card-grid__item-title {
+    font-size: 26px;
+  }
+}

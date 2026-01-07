@@ -15,13 +15,13 @@
 }
 .branch-description {
   max-width: 580px;
-  margin-left: calc((100vw - 1280px) / 2);
+  margin-left: max(0px, calc((100vw - 1280px) / 2));
 }
 .branch-wrapper .section-title {
   font-size: 54px;
 }
 .branch__map-image {
-  width: calc(100% - ((100vw - 1280px) / 2));
+  width: calc(100% - max(0px, calc((100vw - 1280px) / 2)));
   object-fit: 3/2;
   object-fit: cover;
   border-radius: 7px;
@@ -36,4 +36,168 @@
 }
 .interior .grid-gallery {
   margin-top: 40px;
+}
+
+/**** OUR GIRLS ****/
+.girls {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.girls .other-girls-grid {
+  margin-top: 60px;
+}
+
+@media (max-width: 1200px) {
+  .branch-wrapper {
+    gap: 40px;
+    margin-top: 60px;
+  }
+
+  .branch-description {
+    margin-left: 20px;
+  }
+
+  .branch-col:last-child {
+    padding-right: 20px;
+  }
+
+  .branch-wrapper .section-title {
+    font-size: 50px;
+  }
+
+  .interior,
+  .girls {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .branch-wrapper {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .branch-col:first-child,
+  .branch-col:last-child {
+    width: 100%;
+  }
+
+  .branch-col:last-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .branch-description {
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .branch__map-image {
+    width: 100%;
+    display: block;
+  }
+
+  .branch-wrapper .section-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 900px) {
+  .branch-wrapper {
+    margin-top: 50px;
+    gap: 22px;
+  }
+
+  .branch-wrapper .section-title {
+    font-size: 40px;
+  }
+
+  .interior .grid-gallery {
+    margin-top: 30px;
+  }
+
+  .girls .other-girls-grid {
+    margin-top: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .branch-wrapper {
+    margin-top: 44px;
+    gap: 18px;
+  }
+
+  .branch-col:last-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .branch-description {
+    margin-left: 20px;
+    padding-right: 20px;
+  }
+
+  .branch-wrapper .section-title {
+    font-size: 36px;
+  }
+
+  .girls {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+}
+
+@media (max-width: 425px) {
+  .branch-wrapper {
+    margin-top: 36px;
+  }
+
+  .branch-col:last-child {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .branch-description {
+    margin-left: 16px;
+    padding-right: 16px;
+  }
+
+  .branch-wrapper .section-title {
+    font-size: 32px;
+  }
+
+  .branch__map-image {
+    border-width: 3px;
+  }
+
+  .interior,
+  .girls {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .interior {
+    padding-bottom: 32px;
+  }
+
+  .interior .grid-gallery {
+    margin-top: 22px;
+  }
+
+  .girls {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .girls .other-girls-grid {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .branch-wrapper .section-title {
+    font-size: 30px;
+  }
 }

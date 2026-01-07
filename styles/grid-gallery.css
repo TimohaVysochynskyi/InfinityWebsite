@@ -18,3 +18,36 @@
   height: 0;
   min-height: 100%;
 }
+
+@media (max-width: 1200px) {
+  .grid-gallery {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-gallery {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .grid-gallery__image--large {
+    grid-row: auto;
+    aspect-ratio: 3 / 2;
+    height: auto;
+    min-height: 0;
+  }
+}

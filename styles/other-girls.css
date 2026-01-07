@@ -7,10 +7,16 @@
 .other-girls__figure {
   width: 180px;
 }
+.other-girls-grid {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 30px;
+}
 .other-girls-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   align-items: flex-end;
   list-style-type: none;
 }
@@ -21,6 +27,8 @@
   font-family: "Oswald", sans-serif;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+
   gap: 15px;
   text-transform: uppercase;
 }
@@ -31,9 +39,23 @@
   border-radius: 10px;
 }
 
+@media (max-width: 1200px) {
+  .other-girls-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px 24px;
+  }
+}
+
 @media (max-width: 1024px) {
   .other-girls-content {
     margin-top: 26px;
+  }
+}
+
+@media (max-width: 900px) {
+  .other-girls-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
   }
 }
 
@@ -52,10 +74,15 @@
     align-items: flex-start;
     width: 100%;
   }
+}
 
+@media screen and (max-width: 600px) {
+  .other-girls-grid {
+    grid-template-columns: 1fr;
+    gap: 12px 0;
+  }
   .other-girls-list__item {
     justify-content: space-between;
-    width: 100%;
   }
 }
 

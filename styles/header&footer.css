@@ -207,6 +207,7 @@
 /**** FOOTER ***/
 
 .footer {
+  position: relative;
   display: flex;
   align-items: center;
   height: 420px;
@@ -268,12 +269,72 @@
 }
 
 @media (max-width: 1200px) {
+  .footer {
+    overflow: hidden;
+    height: 380px;
+  }
+
+  .footer-image {
+    position: absolute;
+    left: -70px;
+    right: auto;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: 0;
+  }
+
   .footer-content {
-    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px 0 170px;
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .footer-logo {
+    width: 280px;
   }
 
   .footer-lists-wrapper {
-    gap: 40px;
+    gap: 34px;
+  }
+
+  .footer__col {
+    max-width: 320px;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    height: auto;
+    padding: 26px 0;
+  }
+
+  .footer-image {
+    left: -90px;
+    opacity: 0.85;
+  }
+
+  .footer-content {
+    padding-left: 140px;
+  }
+
+  .footer-logo {
+    width: 250px;
+  }
+
+  .footer-lists-wrapper {
+    gap: 28px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .footer__list-item {
+    font-size: 17px;
   }
 }
 

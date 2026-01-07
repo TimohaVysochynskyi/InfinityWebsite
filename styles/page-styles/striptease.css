@@ -220,3 +220,287 @@
   aspect-ratio: 2/1;
   border-radius: 7px;
 }
+
+@media (max-width: 1200px) {
+  .head,
+  .services,
+  .dance {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .services-content {
+    gap: 40px;
+  }
+
+  .services-feedbacks {
+    width: calc(35% - 40px);
+    gap: 34px;
+  }
+
+  .services__option-title {
+    font-size: 32px;
+  }
+
+  .services__option-text {
+    font-size: 19px;
+  }
+
+  .dance-button {
+    font-size: 48px;
+    gap: 30px;
+  }
+
+  .dance-button__icon {
+    height: 96px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .head,
+  .services,
+  .dance {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .video-wrapper {
+    margin-top: 32px;
+    border-radius: 16px;
+  }
+
+  .play-button {
+    width: 86px;
+    height: 86px;
+  }
+
+  .services-content {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .services-options,
+  .services-feedbacks {
+    width: 100%;
+  }
+
+  .services-figure-image {
+    height: 70%;
+    right: 2%;
+    top: 14%;
+    opacity: 0.55;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-title-wrapper {
+    max-width: 100%;
+  }
+
+  .services-options {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .services__option {
+    aspect-ratio: 16 / 11;
+  }
+
+  .services__option-overlay {
+    padding: 20px;
+    padding-bottom: 28px;
+  }
+
+  .services__option-overlay-content {
+    height: auto;
+  }
+
+  .services__option-title {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+
+  .services__option-text {
+    font-size: 18px;
+  }
+
+  .services-feedbacks {
+    gap: 28px;
+  }
+
+  .services-feedbacks__star-icon {
+    width: 40px;
+  }
+
+  .services-feedbacks__text {
+    font-size: 20px;
+  }
+
+  .services-feedbacks__name {
+    font-size: 30px;
+  }
+
+  .dance {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .dance-button {
+    height: 110px;
+    font-size: 42px;
+    gap: 22px;
+  }
+
+  .dance-button__icon {
+    height: 84px;
+    top: 8px;
+  }
+
+  .dance-grid {
+    margin-top: 44px;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head,
+  .services,
+  .dance {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .play-button {
+    width: 74px;
+    height: 74px;
+  }
+
+  .services-figure-image {
+    display: none;
+  }
+
+  .services-feedbacks__star-icon {
+    width: 36px;
+  }
+
+  .services-feedbacks__text {
+    font-size: 19px;
+  }
+
+  .services-feedbacks__name {
+    font-size: 28px;
+  }
+
+  .services-feedbacks__city {
+    font-size: 20px;
+  }
+
+  .dance-button {
+    height: 96px;
+    font-size: 36px;
+    gap: 18px;
+  }
+
+  .dance-button__icon {
+    height: 72px;
+    top: 6px;
+  }
+
+  .dance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .head,
+  .services,
+  .dance {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .video-wrapper {
+    margin-top: 24px;
+    border-radius: 14px;
+  }
+
+  .play-button {
+    width: 62px;
+    height: 62px;
+  }
+
+  .services__option {
+    aspect-ratio: 4 / 3;
+  }
+
+  .services__option-overlay {
+    padding: 16px;
+    padding-bottom: 20px;
+  }
+
+  .services__option-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .services__option-text {
+    font-size: 17px;
+  }
+
+  .services-feedbacks {
+    gap: 22px;
+  }
+
+  .services-feedbacks__stars {
+    gap: 6px;
+  }
+
+  .services-feedbacks__star-icon {
+    width: 32px;
+  }
+
+  .services-feedbacks__text {
+    font-size: 18px;
+  }
+
+  .services-feedbacks__name {
+    font-size: 26px;
+  }
+
+  .services-feedbacks__city {
+    font-size: 18px;
+  }
+
+  .dance {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .dance-button {
+    height: auto;
+    padding: 14px 12px;
+    font-size: 28px;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .dance-button__icon {
+    height: 54px;
+    top: 0;
+  }
+
+  .dance-grid {
+    margin-top: 28px;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .dance-button {
+    font-size: 26px;
+  }
+
+  .services__option-title {
+    font-size: 24px;
+  }
+}

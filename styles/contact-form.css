@@ -57,3 +57,32 @@
   margin-left: auto;
   cursor: pointer;
 }
+
+@media (max-width: 1200px) {
+  .contact-form__row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-form__row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-form__input,
+  .contact-form__textarea {
+    font-size: 18px;
+  }
+
+  .contact-form__textarea-wrapper {
+    height: 200px;
+  }
+
+  .contact-form__button {
+    font-size: 22px;
+  }
+}

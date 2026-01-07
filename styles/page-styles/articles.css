@@ -132,3 +132,157 @@
 .phone-button-icon {
   height: 50px;
 }
+
+@media (max-width: 1200px) {
+  .cols-wrapper {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .pink-col,
+  .side-col {
+    width: calc(50% - 40px);
+  }
+
+  .side-col {
+    padding-left: 40px;
+  }
+
+  .head-content {
+    padding: 40px 20px;
+  }
+
+  .other-articles-list__link {
+    font-size: 28px;
+  }
+
+  .phone-button {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* On tablet/mobile the fixed background columns are removed */
+  .layout-wrapper,
+  .light-col,
+  .pink-col {
+    display: none;
+  }
+
+  .cols-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    max-width: 100%;
+  }
+
+  .main-col,
+  .side-col {
+    width: 100%;
+  }
+
+  .side-col {
+    padding-left: 0;
+    background-color: #ffedf3;
+    padding: 24px 16px;
+    border-radius: 10px;
+  }
+
+  .how-to-find {
+    margin-top: 40px;
+  }
+
+  .how-to-find__map-image {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .head-image {
+    aspect-ratio: 16/9;
+  }
+
+  .main-col {
+    padding: 32px 0;
+  }
+
+  .other-articles-list__link {
+    font-size: 26px;
+  }
+
+  .phone-button {
+    height: 110px;
+    font-size: 26px;
+    gap: 18px;
+  }
+
+  .phone-button-icon {
+    height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .head-image {
+    aspect-ratio: 4/3;
+  }
+
+  .other-articles-list {
+    margin-top: 20px;
+    gap: 12px;
+  }
+
+  .other-articles-list__link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cols-wrapper {
+    padding: 0 16px;
+    gap: 28px;
+  }
+
+  .head-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .main-col {
+    padding: 28px 0;
+  }
+
+  .main-col-title {
+    font-size: 20px;
+  }
+
+  .other-articles-list__link {
+    font-size: 22px;
+  }
+
+  .phone-button {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    font-size: 22px;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .phone-button-icon {
+    height: 38px;
+  }
+}
+
+@media (max-width: 375px) {
+  .other-articles-list__link {
+    font-size: 20px;
+  }
+
+  .phone-button {
+    font-size: 20px;
+  }
+}
