@@ -82,6 +82,10 @@
   font-weight: 700;
   width: fit-content;
 }
+.footer-lists-wrapper {
+  display: flex;
+  gap: 80px;
+}
 .footer__list {
   list-style-type: none;
 }

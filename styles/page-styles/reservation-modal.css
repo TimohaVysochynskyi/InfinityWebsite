@@ -252,3 +252,7 @@
   border-radius: 7px;
   padding: 20px;
 }
+.modal-form-wrapper .contact-form__textarea-wrapper,
+.modal-form-wrapper .contact-form__input {
+  border-color: #fff;
+}

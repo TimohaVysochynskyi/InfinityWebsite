@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   height: 800px;
+  font-family: "Oswald", sans-serif;
 }
 .block-list__col {
   width: 50%;

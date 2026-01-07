@@ -1,0 +1,134 @@
+/**** LAYOUT ****/
+.layout-wrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+}
+.light-col,
+.pink-col {
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+.light-col {
+  left: 0;
+  background-color: var(--bg-color);
+  z-index: -1;
+}
+.pink-col {
+  right: 0;
+  background-color: #ffedf3;
+  z-index: -1;
+}
+.light-col,
+.main-col {
+  width: 50%;
+}
+.pink-col,
+.side-col {
+  width: calc(50% - 60px);
+}
+.side-col {
+  padding-left: 80px;
+}
+.cols-wrapper {
+  display: flex;
+  gap: 60px;
+  max-width: 1280px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/**** HEAD CONTENT ****/
+.head-wrapper {
+  background-color: #ffedf3;
+}
+.head-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.head-image {
+  width: 100%;
+  aspect-ratio: 15/5;
+  object-fit: cover;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.35);
+}
+
+/**** MAIN COL ****/
+.main-col {
+  padding: 40px 0;
+}
+.main-col .paragraph {
+  margin: 0;
+}
+.main-col .text-accent {
+  color: rgba(83, 0, 30, 1);
+}
+.main-col .text-underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.main-col-title {
+  font-size: 22px;
+  color: rgba(83, 0, 30, 1);
+  font-weight: 700;
+  font-family: "Istok Web", sans-serif;
+}
+
+/**** OTHER ARTICLES ****/
+.other-articles {
+  padding: 20px 0;
+}
+.other-articles-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+.other-articles-list__link {
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif;
+  color: var(--accent-color);
+  text-decoration: none;
+  line-height: 110%;
+}
+.other-girls {
+  padding: 20px 0;
+}
+
+/**** HOW TO FIND ****/
+.how-to-find {
+  margin-top: 60px;
+}
+.how-to-find__map-image {
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid var(--accent-color);
+  margin-top: 40px;
+}
+.phone-button {
+  background: linear-gradient(90deg, #000000 0%, #3b3b3b 100%);
+  height: 130px;
+  max-width: 375px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.phone-button-icon {
+  height: 50px;
+}

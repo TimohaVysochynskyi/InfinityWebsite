@@ -47,6 +47,7 @@ body {
   font-size: 64px;
   font-weight: 700;
   font-family: "Oswald";
+  max-width: 800px;
 }
 .section-cursive {
   font-size: 70px;
@@ -54,8 +55,16 @@ body {
 }
 
 .paragraph {
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Istok Web";
   margin: 25px 0;
   color: #000000d9;
+}
+
+.side-col-title {
+  font-size: 44px;
+  color: #53001e;
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  border-bottom: 3px solid #b12054cc;
 }

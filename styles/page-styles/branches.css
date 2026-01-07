@@ -1,0 +1,39 @@
+/**** BRANCH DESCRIPTION ****/
+.branch-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 80px;
+}
+.branch-col:first-child {
+  width: 55%;
+  background-color: rgba(255, 206, 222, 1);
+  height: fit-content;
+}
+.branch-col:last-child {
+  width: calc(45% - 50px);
+}
+.branch-description {
+  max-width: 580px;
+  margin-left: calc((100vw - 1280px) / 2);
+}
+.branch-wrapper .section-title {
+  font-size: 54px;
+}
+.branch__map-image {
+  width: calc(100% - ((100vw - 1280px) / 2));
+  object-fit: 3/2;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 5px solid rgba(177, 32, 84, 1);
+}
+
+/**** PHOTOGALLERY ****/
+.interior {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.interior .grid-gallery {
+  margin-top: 40px;
+}
